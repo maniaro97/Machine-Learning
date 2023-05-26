@@ -7,3 +7,5 @@ pandas-profiling
 streamlit-pandas-profiling
 seaborn
 os
+scikit_learn
+scipy
