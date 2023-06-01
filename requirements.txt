@@ -3,7 +3,7 @@ pandas
 streamlit
 matplotlib
 pycaret
-python==3.8
+python~=3.8
 pandas-profiling
 streamlit_pandas_profiling
 seaborn
