@@ -3,7 +3,8 @@ pandas
 streamlit
 matplotlib
 pycaret
-ydata-profiling
+phik ~= 0.11.1
+pandas-profiling
 streamlit_pandas_profiling
 seaborn
 scikit-learn
