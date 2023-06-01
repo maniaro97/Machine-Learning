@@ -4,8 +4,6 @@ pandas
 pandas-profiling
 pycaret
 scikit-learn
-scipy
-statsmodels
 streamlit
 streamlit-pandas-profiling
 ydata-profiling
