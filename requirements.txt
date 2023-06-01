@@ -1,9 +1,5 @@
-matplotlib
-numpy
 pandas
 pandas-profiling
 pycaret
-scikit-learn
 streamlit
 streamlit-pandas-profiling
-ydata-profiling
