@@ -39,13 +39,13 @@ if choose=="Dataset":
         st.dataframe(df)
 
 if choose=="Analysis":
-    st.subheader("Perform profiling on Dataset")
+    st.write("Performing profiling on uploaded Dataset using pandas_profiling.")
     if st.sidebar.button("Do Analysis"):
         profile_report = df.profile_report() 
         st_profile_report(profile_report)
     
 if choose=="Training":
-    st.header("Start Training your Model now.")
+    st.write("Start Training your Model now. Please choose classification or regression based on your model parameters.")
     choice = st.sidebar.selectbox("Select your Technique:", ["Classification","Regression"])
     target = st.selectbox("Select you Target Variable",df.columns)
     if choice=="Classification":
@@ -82,6 +82,7 @@ if choose=="Training":
 if choose =="Download":
     with open("Machine Learning model.pkl",'rb') as f:
         st.caption("Download your model from here:")
+        st.write("Note: the .pkl file will be download from here :)")
         st.download_button("Download the file",f,"Machine Learning model.pkl")
         
     
