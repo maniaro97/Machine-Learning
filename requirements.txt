@@ -4,8 +4,7 @@ pandas
 streamlit
 matplotlib
 pycaret
-python~=3.8
 pandas-profiling
-streamlit_pandas_profiling
+streamlit-pandas-profiling
 seaborn
 scikit-learn
