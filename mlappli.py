@@ -30,7 +30,7 @@ with st.sidebar:
     st.info("I have made this application which helps in building automated machine learning models using streamlit, pandas, pandas_profiling(for EDA) and pycaret library. Hope ypu like it! :)")
     
 if choose=="Dataset":
-    st.write("Please upload your dataset here.")
+    st.write("Please upload your dataset here. Only .csv files allowed")
     dataset_value = st.file_uploader("Upload here")
     
     if dataset_value:
