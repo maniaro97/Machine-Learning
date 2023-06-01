@@ -16,16 +16,18 @@ import pycaret
 from pycaret.classification import setup, compare_models, pull, save_model, ClassificationExperiment
 from pycaret.regression import setup, compare_models, pull, save_model, RegressionExperiment
 
-st.title("Machine Learning App using PyCaret")
+st.title("Machine Learning Application using Classification and Regression Models")
 
 if os.path.exists("sourcev.csv"):
     df = pd.read_csv("sourcev.csv",index_col=None)
 
 with st.sidebar:
-    st.header("Welcome to Pycaret!")
-    st.subheader("This Application is made for learning machine models.")
-    st.caption("Choose your parameters here to work on the application.")
+    st.image("https://miro.medium.com/v2/resize:fit:1400/format:webp/1*cG6U1qstYDijh9bPL42e-Q.jpeg")
+    st.header("Welcome to the Application!")
+    st.subheader("This is made for learning machine models. You can do both classification and regression analysis here.")
+    st.caption("Choose your parameters below to work on the application.")
     choose=st.radio(":coffee:",["Dataset","Analysis","Training","Download"])
+    st.info("I have made this application which helps in building automated machine learning models using streamlit, pandas, pandas_profiling(for EDA) and pycaret library. Hope ypu like it! :)")
     
 if choose=="Dataset":
     st.write("Please upload your dataset here.")
